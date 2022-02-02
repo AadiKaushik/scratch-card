@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700' rel='stylesheet' type='text/css'>
+  
+  <title>Scratch Card</title>
+  <style type="text/css">
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.scratchpad{
+  width: 450px;
+  height: 445px;
+  border: solid 10px #000000;
+  margin:0 auto;
+}
+body {
+  background:white;
+}
+.scratch-container {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width:100%;
+}
+@media only screen and (max-width : 480px) {
+  .scratchpad {width:400px;height:396px;}
+  .scratch-container {width:400px !important;}
+}
+ 
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  .scratchpad {width:290px;height:287px;}
+  .scratch-container {width:290px !important;}
+}
+.promo-container {
+	background:rgb(0, 0, 0);
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	width:450px;
+	padding:20px;
+	margin:0 auto;
+	text-align:center;
+	font-family:'Open Sans', Arial,Sans-serif;
+	color:#333;
+	font-size:16px;
+	margin-top:20px;
+}
+h1{
+  align-self: center;
+  text-align: center;
+}
+.subtext{
+  font-size:x-small
+}
+h2{
+  align-self: center;
+  text-align: center;
+}
+.btn {
+  background:#56CFD2;
+  color: #000;;
+  padding:10px 25px;
+  display:inline-block;
+  margin-top:15px;
+  text-decoration:none;
+  font-weight:600;
+  text-transform:uppercase;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radiuss:3px;
+}
+
+.text{
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+  </style>
+ 
+</head>
+<body>
+  <div class = 'logo'>
+    <center>
+      <image src = 'logo.png'>
+    </center>
+  
+
+    </image>
+  </div>
+  <div class ='subtext'>
+    <h1>Kapturly</h1>
+  </div>
+  <div class ="text" >
+    <h1>Our wedding gift from Kapturly to you</h1>
+    <h2>Rub the present below</h2>
+  </div>
+<div class="scratch-container">
+  <div id="promo" class="scratchpad"></div>
+</div>
+<h1>
+  Free Engagement shoot
+</h1>
+<div class="promo-container" style="display:none;">
+
+
+ 
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://jennamolby.com/scratch-and-win/js/wScratchPad.min.js"></script>
+ 
+<script type="text/javascript">
+
+
+var bg1 = 'picture.png';
+
+selectBG = bg1
+
+$('#promo').wScratchPad({
+    // the size of the eraser
+    size        : 50,    
+    // the randomized scratch image   
+    bg:  selectBG,
+    // give real-time updates
+    realtime    : true, 
+    // The overlay image
+    fg: 'https://media.istockphoto.com/photos/white-gift-box-with-gold-bow-picture-id172407809?k=20&m=172407809&s=170667a&w=0&h=VPHo-G7LpmU9_jNv797lqit7X99jbLQRcCX3aQsADYM=',
+    // The cursor (coin) image
+    'cursor': 'url("https://jennamolby.com/scratch-and-win/images/coin1.png") 5 5, default',
+    
+  
+ });
+
+
+</script>
+
+ 
+</body>
+</html>
